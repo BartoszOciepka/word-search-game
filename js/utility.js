@@ -16,7 +16,7 @@ if (typeof Math.rangeInt != 'function') {
 }
 
 /**
- * Mege two objects
+ * Merge two objects
  *
  * @param {Object} o1 Object 1
  * @param {Object} o2 Object 2
