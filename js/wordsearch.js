@@ -21,12 +21,34 @@
 
 		//Words solved.
 		this.solved = 0;
+		var words = []
+		
+		switch(Math.floor(Math.random() * 5) + 1  ) {
+			case 1:
+				words = ['tomas', 'adam', 'joseph', 'rudi', 'dan']
+				break;
+			case 2:
+				words = ['apple', 'banana', 'orange', 'pear', 'strawberry']
+				break;
+			case 3:
+				words = ['pen', 'desk', 'board', 'ruler', 'rubber']
+				break;
+			case 4:
+				words = ['car', 'plane', 'bus', 'ship', 'bike']
+				break;
+			case 5:
+				words = ['string', 'integer', 'float', 'double', 'char']
+				break;
+			default:
+				words = ['dog', 'cat', 'horse', 'elephant', 'gorilla']
+		}
+		
 
 		// Default settings
 		var default_settings = {
 			'directions': ['W', 'N', 'WN', 'EN'],
-			'gridSize': 10,
-			'words': ['dog', 'cat', 'horse', 'elephant', 'gorilla'],
+			'gridSize': 15,
+			'words': words,
 			'wordsList': [],
 			'debug': false
 		}
